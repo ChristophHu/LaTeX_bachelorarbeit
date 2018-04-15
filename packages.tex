@@ -1,0 +1,74 @@
+% packages ---------------------------------------------------------------------
+% Die Datei packages.tex beinhaltet alle benötigten packages alsauch diese,
+% welche später verfügbar sein sollten.
+% ------------------------------------------------------------------------------
+
+% Seitenstil -------------------------------------------------------------------
+\usepackage[
+    automark,                           % Kapitelangaben in Kopfzeile automatisch erstellen
+    headsepline,                        % Trennlinie unter Kopfzeile
+    ilines                              % Trennlinie linksbündig ausrichten
+]{scrpage2}
+
+\usepackage[ngerman]{babel}             % ...
+\usepackage{moreverb}                   % ...
+\usepackage{ae}                         % Schönere Schriften zur PDF-Erstellung
+
+% Schrift ----------------------------------------------------------------------
+\usepackage{lmodern}                    % neue deutsche Rechtschreibung zur Silbentrennung,
+                                        % korrekten Benennung von Inhaltsverzeichnis und Literaturverzeichnis
+\usepackage{relsize}                    % Schriftgröße relativ festlegen
+
+% Umlaute ----------------------------------------------------------------------
+\usepackage{ngerman}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}                % zur korrekten Darstellung von öüä
+
+% Zeichensätze -----------------------------------------------------------------
+\usepackage{textcomp}                   % \textcopyright, \texttrademark
+\usepackage[official,right]{eurosym}    % EUR-Symbol; \euro oder \EUR{XX,XX}
+
+% Grafiken ---------------------------------------------------------------------
+\usepackage[dvips,final]{graphicx}      % Einbinden von JPG-Grafiken ermöglichen
+\graphicspath{{ba_logo/}}               % hier liegen die Bilder des Dokuments
+\usepackage{floatflt}                   % umfließen von Bildern
+
+% Index-Ausgabe mit \printindex ------------------------------------------------
+\usepackage{makeidx}
+
+% Zeilenabstände und Seitenränder etc. -----------------------------------------
+\usepackage{setspace}                   % Definition von Zeichen-/Zeilenabständen
+\usepackage{geometry}                   % Definition von Seitenrändern
+
+% Index & Hyperlinks -----------------------------------------------------------
+\usepackage{makeidx}
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
+%\usepackage{hyperref}                   % genutzt für den Glossar
+\usepackage{url}                        % URL verlinken
+
+% Glossar - https://en.wikibooks.org/wiki/LaTeX/Glossary -----------------------
+\usepackage{glossaries}                 % zur Erstellung eines Glossars
+
+% Zitierweise ------------------------------------------------------------------
+\usepackage[numbers]{natbib}            % Zitierweise, ohne options wird ein Fehler bei fehlendem Jahr im Literaturverzeichnis angezeigt
+
+%\usepackage[
+%    style=authoryear,           % Zitierstil
+%    isbn=false,                 % ISBN nicht anzeigen, gleiches geht mit nahezu allen anderen Feldern
+%    pagetracker=true,           % ebd. bei wiederholten Angaben (false=ausgeschaltet, page=Seite, spread=Doppelseite, true=automatisch)
+%    maxbibnames=50,             % maximale Namen, die im Literaturverzeichnis angezeigt werden (ich wollte alle)
+%    maxcitenames=3,             % maximale Namen, die im Text angezeigt werden, ab 4 wird u.a. nach den ersten Autor angezeigt
+%    autocite=inline,            % regelt Aussehen für \autocite (inline=\parancite)
+%    block=space,                % kleiner horizontaler Platz zwischen den Feldern
+%    backref=true,               % Seiten anzeigen, auf denen die Referenz vorkommt
+%    backrefstyle=three+,        % fasst Seiten zusammen, z.B. S. 2f, 6ff, 7-10
+%    date=short,                 % Datumsformat
+%    ]{biblatex}
+%\setlength{\bibitemsep}{1em}    % Abstand zwischen den Literaturangaben
+%\setlength{\bibhang}{2em}       % Einzug nach jeweils erster Zeile
+%\bibliography{literature}       % Bibtex-Datei wird schon in der Preambel eingebunden
+
+% abgelegte packages -----------------------------------------------------------
+%\usepackage{typearea}           % Fehler zur Präambel-Head-Zeile umgehen
+
+

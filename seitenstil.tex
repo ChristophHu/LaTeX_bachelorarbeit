@@ -1,0 +1,37 @@
+% Seitenstil -------------------------------------------------------------------
+%   Diese Datei überträgt die Einstellungen auf die folgenden Seiten
+%   des Dokuments
+% ------------------------------------------------------------------------------
+
+% Satzspiegel -----------------------------------------------------------------
+\setlength{\topskip}{\ht\strutbox} % behebt Warnung von geometry
+\geometry{paper=a4paper,left=35mm,right=35mm,top=30mm,bottom=50mm}
+
+% Schriftart -------------------------------------------------------------------
+\usepackage{times}
+%\usepackage{fontspec}
+%\setmainfont{Arial}
+
+% Zeilenabstand 1,5 Zeilen -----------------------------------------------------
+\onehalfspacing
+
+% Kopf- und Fußzeilen ----------------------------------------------------------
+\pagestyle{scrheadings}
+\renewcommand*{\chapterpagestyle}{scrheadings} 
+% Schriftform der Kopfzeile
+%\renewcommand{\headfont}{\normalfont}
+
+\ihead{                                     % Kopfzeile
+    \textbf{\large{\titel}}                 % Titel der Arbeit aus der meta.tex
+    \\[5px] 
+    \large{\untertitel}                     % Untertitel der Arbeit aus der meta.tex
+}
+\chead{} 
+\ohead{\includegraphics[scale=1.0]{\logo}} 
+\setlength{\headheight}{21mm}
+%\setheadsepline[text]{0.4pt}                % Linie unter die Kopfzeile
+%\setwidth{0pt}{textwithmarginpar}           % nur wenn außerhalb des Textes erweitert werden soll
+
+\ifoot{\headmark}                           % Fußzeile
+\cfoot{}                           
+\ofoot{\pagemark}                           % Seitenzahl
