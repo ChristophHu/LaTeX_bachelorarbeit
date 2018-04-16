@@ -29,10 +29,14 @@
     \newpage
     \pagenumbering{arabic}                              % 1, 2, 3, 4,...
     \include{ba_inhalt/ba_inhalt}                       % Teilung in Einleitung, Hauptteil und Schluss/Fazit
+    \newpage
+    \appendix
     \include{ba_anhang/ba_anhang}
+    \newpage
     \include{ba_literaturverzeichnis/ba_literaturverzeichnis}
-    
-    \include{ba_eidesstattliche/ba_eidesstattliche}     % Eidesstattliche Erklärung der Bachelorarbeit aufnehmen
     %\printglossary[style=altlist,title=Glossar]        % noch ohne Funktion
+    \newpage
     \printindex                                         % Index
+    \newpage
+    \include{ba_eidesstattliche/ba_eidesstattliche}     % Eidesstattliche Erklärung der Bachelorarbeit aufnehmen
 \end{document}

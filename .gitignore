@@ -39,6 +39,8 @@ Temporary Items
 *.bbl
 *.blg
 *.dvi
+*.fls
+*.fdb_latexmk
 *.glg
 *.gls
 *.ilg
