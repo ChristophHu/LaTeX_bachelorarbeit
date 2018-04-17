@@ -3,14 +3,19 @@
 % ------------------------------------------------------------------------------
 \documentclass[
     11pt,                               % Schriftgröße
-    a4paper,                            % Papierformat
+    a4paper,                            % Papierformat DIN
     titlepage,                          % es wird eine Titelseite verwendet
-    parskip=half,                       % Abstand zwischen Absätzen (halbe Zeile)
+    parskip=half,                       % Abstand zwischen Absätzen (halbe Zeile) oder full (ganze Zeile)
     headings=normal,                    % Größe der Überschriften verkleinern
-    index=totoc,                        % Index im Inhaltsverzeichnis aufführen
-    captions=tableheading,              % Beschriftung von Tabellen unterhalb ausgeben
     leqno,                              % Formeln werden mittig dargestellt und erhalten Nummer
     twoside,                            % Zweiseitig (Buch)
+    toc=flat,                           % Flache TOC
+    index=totoc,                        % Index im Inhaltsverzeichnis aufführen
+    bibliography=totoc,                 % Literaturverzeichnis im Inhaltsverzeichnis aufführen
+    captions=tableheading,              % Beschriftung von Tabellen unterhalb ausgeben 
+    listof=totoc,                       % Verzeichnisse im Inhaltsverzeichnis aufführen
+    listof=leveldown,                   % Gleitumgebungsverzeichnisse eine Ebene tiefer
+    bibliography=leveldown,             % Literaturverzeichnis eine Ebene tiefer
     final                               % Status des Dokuments (final/draft)
 ]{scrreprt}
 
