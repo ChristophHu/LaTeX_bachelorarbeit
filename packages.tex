@@ -20,7 +20,7 @@
 \usepackage{relsize}                    % Schriftgröße relativ festlegen
 
 % Umlaute ----------------------------------------------------------------------
-\usepackage{ngerman}
+\usepackage[ngerman]{babel}
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}                % zur korrekten Darstellung von öüä
 
@@ -29,9 +29,10 @@
 \usepackage[official,right]{eurosym}    % EUR-Symbol; \euro oder \EUR{XX,XX}
 
 % Grafiken ---------------------------------------------------------------------
-\usepackage[dvips,final]{graphicx}      % Einbinden von JPG-Grafiken ermöglichen
-\graphicspath{{ba_logo/}}               % hier liegen die Bilder des Dokuments
-\usepackage{floatflt}                   % umfließen von Bildern
+%\usepackage[dvips,final]{graphicx}      % Einbinden von JPG-Grafiken ermöglichen
+\usepackage{graphicx}
+%\graphicspath{ba_logo/}                 % hier liegen die Bilder des Dokuments
+\usepackage{floatflt}                   % umfließen von Bilderna
 
 % Index-Ausgabe mit \printindex ------------------------------------------------
 \usepackage{makeidx}
@@ -42,41 +43,18 @@
 
 % Index & Hyperlinks -----------------------------------------------------------
 \usepackage{makeidx}
-\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
-%\usepackage{hyperref}                   % genutzt für den Glossar
+\usepackage[colorlinks=false]{hyperref}
 \usepackage{url}                        % URL verlinken
 
 % Glossar - https://en.wikibooks.org/wiki/LaTeX/Glossary -----------------------
 \usepackage{glossaries}                 % zur Erstellung eines Glossars
 
 % Zitierweise ------------------------------------------------------------------
-\usepackage[numbers]{natbib}            % Zitierweise, ohne options wird ein Fehler bei fehlendem Jahr im Literaturverzeichnis angezeigt
-
-%\usepackage[backend=bibtex , style=numeric , bibstyle=numeric ]{biblatex}
-%\usepackage[style=authoryear,backend=biber,natbib=true,sortlocale=de_DE,sorting=none]{biblatex}
-%\addbibresource{literaturliste.bib} %Literatur laden
-%\usepackage{csquotes}% Recommended
-
-
-
-
-%\usepackage[
-%    style=authoryear,           % Zitierstil
-%    isbn=false,                 % ISBN nicht anzeigen, gleiches geht mit nahezu allen anderen Feldern
-%    pagetracker=true,           % ebd. bei wiederholten Angaben (false=ausgeschaltet, page=Seite, spread=Doppelseite, true=automatisch)
-%    maxbibnames=50,             % maximale Namen, die im Literaturverzeichnis angezeigt werden (ich wollte alle)
-%    maxcitenames=3,             % maximale Namen, die im Text angezeigt werden, ab 4 wird u.a. nach den ersten Autor angezeigt
-%    autocite=inline,            % regelt Aussehen für \autocite (inline=\parancite)
-%    block=space,                % kleiner horizontaler Platz zwischen den Feldern
-%    backref=true,               % Seiten anzeigen, auf denen die Referenz vorkommt
-%    backrefstyle=three+,        % fasst Seiten zusammen, z.B. S. 2f, 6ff, 7-10
-%    date=short,                 % Datumsformat
-%    ]{biblatex}
-%\setlength{\bibitemsep}{1em}    % Abstand zwischen den Literaturangaben
-%\setlength{\bibhang}{2em}       % Einzug nach jeweils erster Zeile
-%\bibliography{literature}       % Bibtex-Datei wird schon in der Preambel eingebunden
+%\usepackage[numbers]{natbib}            % Zitierweise, ohne options wird ein Fehler bei fehlendem Jahr im Literaturverzeichnis angezeigt
+%\usepackage{filecontents}               % dient der Erstellung des Literaturverzeichnis durch ba_literaturverzeichnis.tex
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\bibliography{bachelorarbeit_lit.bib} 
+\usepackage[babel,german=quotes,threshold=3]{csquotes}
 
 % abgelegte packages -----------------------------------------------------------
 %\usepackage{typearea}           % Fehler zur Präambel-Head-Zeile umgehen
-
-

@@ -41,7 +41,7 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
       <file>bachelorarbeit.bcf</file>
@@ -53,7 +53,6 @@
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
-      <file>blx-natbib.def</file>
       <file>authoryear.bbx</file>
       <file>standard.bbx</file>
       <file>authoryear.cbx</file>
@@ -62,7 +61,7 @@
       <file>german.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
@@ -81,7 +80,7 @@
       <file>bachelorarbeit.bcf</file>
     </requires>
     <requires type="editable">
-      <file>literaturliste.bib</file>
+      <file>bachelorarbeit_lit.bib</file>
     </requires>
   </external>
 </requests>
