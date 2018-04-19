@@ -13,8 +13,21 @@ So funktioniert auch das zweite 3. Zitat \autocite[80]{aristotle:physics}\par
 So funktioniert das dritte Zitat leider nicht \autocite{aristotle:physics}\par
 Test \citeyear{aristotle:physics} by \citeauthor{aristotle:physics}
 
+% acs gibt lediglich die Kurzform, acl die Langform wieder
 Das K\"urzel EU \ac{EU} wird in erster Verwendung auch in der Langform dargestellt.
-Wird das gleiche K\"urzel erneut aufgerufen (\ac{EU}) so erfolgt lediglich die Kurzform. % acs gibt lediglich die Kurzform, acl die Langform wieder
+Wird das gleiche K\"urzel erneut aufgerufen (\ac{EU}) so erfolgt lediglich die Kurzform.
+
+% Abbildungsbereschreibung für das Abbildungsverzeichnis
+\begin{figure}
+    \centering
+    \captionof{figure}{Eine Beispielabbildung}    % \caption[Beispielabbildung]{Eine Beispielabbildung}
+\end{figure}
+
+\newpage
+\begin{table}
+    \centering
+    \captionof{table}{Tabellenbeschreibung}
+\end{table}
 
 \subsection{Weiteres Unterkapitel}       % 1.1.2
 \section{Zweites}
