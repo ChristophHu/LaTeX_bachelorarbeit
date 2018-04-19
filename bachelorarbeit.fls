@@ -232,6 +232,10 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.cfg
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
 OUTPUT befehle.aux
 INPUT befehle.tex
 INPUT befehle.tex
@@ -252,6 +256,8 @@ INPUT ba_deckblatt/ba_deckblatt.aux
 INPUT ba_deckblatt/ba_deckblatt.aux
 INPUT ba_danksagung/ba_danksagung.aux
 INPUT ba_danksagung/ba_danksagung.aux
+INPUT ba_abkuerzungsverzeichnis.aux
+INPUT ba_abkuerzungsverzeichnis.aux
 INPUT ba_inhalt/ba_inhalt.aux
 INPUT ba_inhalt/ba_inhalt.aux
 INPUT ba_anhang/ba_anhang.aux
@@ -371,6 +377,11 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmro8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmro8r.tfm
+OUTPUT ba_abkuerzungsverzeichnis.aux
+INPUT ba_abkuerzungsverzeichnis.tex
+INPUT ba_abkuerzungsverzeichnis.tex
+INPUT ba_logo/logo.jpg
+INPUT ./ba_logo/logo.jpg
 OUTPUT ba_inhalt/ba_inhalt.aux
 INPUT ba_inhalt/ba_inhalt.tex
 INPUT ba_inhalt/ba_inhalt.tex
@@ -422,6 +433,8 @@ INPUT ba_deckblatt/ba_deckblatt.aux
 INPUT ba_deckblatt/ba_deckblatt.aux
 INPUT ba_danksagung/ba_danksagung.aux
 INPUT ba_danksagung/ba_danksagung.aux
+INPUT ba_abkuerzungsverzeichnis.aux
+INPUT ba_abkuerzungsverzeichnis.aux
 INPUT ba_inhalt/ba_inhalt.aux
 INPUT ba_inhalt/ba_inhalt.aux
 INPUT ba_anhang/ba_anhang.aux
