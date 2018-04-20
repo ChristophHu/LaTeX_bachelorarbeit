@@ -260,6 +260,8 @@ INPUT ba_deckblatt/ba_deckblatt.aux
 INPUT ba_deckblatt/ba_deckblatt.aux
 INPUT ba_danksagung/ba_danksagung.aux
 INPUT ba_danksagung/ba_danksagung.aux
+INPUT ba_inhaltsverzeichnis.aux
+INPUT ba_inhaltsverzeichnis.aux
 INPUT ba_abkuerzungsverzeichnis.aux
 INPUT ba_abkuerzungsverzeichnis.aux
 INPUT ba_abbildungsverzeichnis.aux
@@ -272,6 +274,8 @@ INPUT ba_anhang/ba_anhang.aux
 INPUT ba_anhang/ba_anhang.aux
 INPUT ba_literaturverzeichnis/ba_literaturverzeichnis.aux
 INPUT ba_literaturverzeichnis/ba_literaturverzeichnis.aux
+INPUT ba_index.aux
+INPUT ba_index.aux
 INPUT ba_eidesstattliche/ba_eidesstattliche.aux
 INPUT ba_eidesstattliche/ba_eidesstattliche.aux
 OUTPUT bachelorarbeit.aux
@@ -366,6 +370,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmro8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmro8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+OUTPUT ba_inhaltsverzeichnis.aux
+INPUT ba_inhaltsverzeichnis.tex
+INPUT ba_inhaltsverzeichnis.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm
 INPUT bachelorarbeit.toc
 INPUT bachelorarbeit.toc
@@ -442,6 +449,9 @@ INPUT ba_logo/logo.jpg
 INPUT ./ba_logo/logo.jpg
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+OUTPUT ba_index.aux
+INPUT ba_index.tex
+INPUT ba_index.tex
 INPUT bachelorarbeit.ind
 INPUT bachelorarbeit.ind
 OUTPUT ba_eidesstattliche/ba_eidesstattliche.aux
@@ -452,6 +462,8 @@ INPUT ba_deckblatt/ba_deckblatt.aux
 INPUT ba_deckblatt/ba_deckblatt.aux
 INPUT ba_danksagung/ba_danksagung.aux
 INPUT ba_danksagung/ba_danksagung.aux
+INPUT ba_inhaltsverzeichnis.aux
+INPUT ba_inhaltsverzeichnis.aux
 INPUT ba_abkuerzungsverzeichnis.aux
 INPUT ba_abkuerzungsverzeichnis.aux
 INPUT ba_abbildungsverzeichnis.aux
@@ -464,6 +476,8 @@ INPUT ba_anhang/ba_anhang.aux
 INPUT ba_anhang/ba_anhang.aux
 INPUT ba_literaturverzeichnis/ba_literaturverzeichnis.aux
 INPUT ba_literaturverzeichnis/ba_literaturverzeichnis.aux
+INPUT ba_index.aux
+INPUT ba_index.aux
 INPUT ba_eidesstattliche/ba_eidesstattliche.aux
 INPUT ba_eidesstattliche/ba_eidesstattliche.aux
 INPUT bachelorarbeit.run.xml

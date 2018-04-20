@@ -10,12 +10,14 @@
     leqno,                              % Formeln werden mittig dargestellt und erhalten Nummer
     twoside,                            % Zweiseitig (Buch)
     toc=flat,                           % Flache TOC
-    index=totoc,                        % Index im Inhaltsverzeichnis aufführen
-    bibliography=totoc,                 % Literaturverzeichnis im Inhaltsverzeichnis aufführen
+    %acronym=totoc                       % Abkürzungsverzeichnis         im Inhaltsverzeichnis aufführen
+    listof=totoc,                       % Verzeichnisse                 im Inhaltsverzeichnis aufführen
+    %bibliography=totoc,                 % Literaturverzeichnis          im Inhaltsverzeichnis aufführen
+    %index=totoc,                        % Index                         im Inhaltsverzeichnis aufführen
+    listof=leveldown,                   % Gleitumgebungsverzeichnisse   eine Ebene tiefer
+    %bibliography=leveldown,             % Literaturverzeichnis          eine Ebene tiefer
+    %index=leveldown,                    % Index                         eine Ebene tiefer
     captions=tableheading,              % Beschriftung von Tabellen unterhalb ausgeben 
-    listof=totoc,                       % Verzeichnisse im Inhaltsverzeichnis aufführen
-    listof=leveldown,                   % Gleitumgebungsverzeichnisse eine Ebene tiefer
-    bibliography=leveldown,             % Literaturverzeichnis eine Ebene tiefer
     final                               % Status des Dokuments (final/draft)
 ]{scrreprt}
 
@@ -29,25 +31,15 @@
 \begin{document}
     \pagenumbering{Roman}                               % I (Deckblatt), II (Eidesstattliche Erklärung), III (Danksagung), IV (Abbildungsverzeichnis), ...
     \include{ba_deckblatt/ba_deckblatt}                 % Deckblatt der Bachelorarbeit aufnehmen
-    %Zusammenfassung
     \include{ba_danksagung/ba_danksagung}               % Danksagung der Bachelorarbeit aufnehmen
-    \tableofcontents
-    \newpage
+    \include{ba_inhaltsverzeichnis}                     % Index
     \include{ba_abkuerzungsverzeichnis}                 % Abkürzungsverzeichnis
-    \newpage
     \include{ba_abbildungsverzeichnis}                  % Abbildungsverzeichnis
-    \newpage
     \include{ba_tabellenverzeichnis}                    % Tabellenverzeichnis
-    \newpage
     \pagenumbering{arabic}                              % 1, 2, 3, 4,...
     \include{ba_inhalt/ba_inhalt}                       % Teilung in Einleitung, Hauptteil und Schluss/Fazit
-    \newpage
-    \appendix
     \include{ba_anhang/ba_anhang}
-    \newpage
-    \include{ba_literaturverzeichnis/ba_literaturverzeichnis}
-    \newpage
-    \printindex                                         % Index
-    \newpage
+    \include{ba_literaturverzeichnis/ba_literaturverzeichnis}   % Literaturverzeichnis
+    \include{ba_index}                                  % Index
     \include{ba_eidesstattliche/ba_eidesstattliche}     % Eidesstattliche Erklärung der Bachelorarbeit aufnehmen
 \end{document}
