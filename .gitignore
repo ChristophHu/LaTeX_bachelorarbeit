@@ -37,6 +37,7 @@ Temporary Items
 *.acr
 *.alg
 *.bbl
+*.bcf
 *.blg
 *.dvi
 *.fls
@@ -52,3 +53,4 @@ Temporary Items
 *.mtc1
 *.out
 *.synctex.gz
+*.xml
