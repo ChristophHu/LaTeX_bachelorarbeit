@@ -3,26 +3,29 @@
 \section{Erstes}                        % 1.1.  Erstes Unterkapitel
 \subsection{Zweites Unterkapitel}       % 1.1.1 Zweites Unterkapitel
 
+% Test des Index - Einträge erhalten einen Eintrag im Index
 Affe\index{Affe}
 Bieber\index{Bieber}
 
-Das erste Zitat\footfullcite{aristotle:physics}\par
-So funktioniert auch das zweite Zitat\footcite{aristotle:physics}\par
-So funktioniert auch das zweite 2. Zitat \cite{aristotle:physics}\par
-So funktioniert auch das zweite 3. Zitat \autocite[80]{aristotle:physics}\par 
-So funktioniert das dritte Zitat leider nicht \autocite{aristotle:physics}\par
-Test \citeyear{aristotle:physics} by \citeauthor{aristotle:physics}
+% Test zu Zitaten - Eintrag muss im Literaturverzeichnis vorhanden sein
+Das erste Zitat\footfullcite{aristotle:physics}\par                                 % gute Variante (Fußzeile, umfänglich)
+So funktioniert auch das zweite Zitat\footcite{aristotle:physics}\par               % gute Variante (Fußzeile, kurz/knapp)
+So funktioniert auch das zweite 2. Zitat \cite{aristotle:physics}\par               % keine gute Variante
+So funktioniert auch das zweite 3. Zitat \autocite[80]{aristotle:physics}\par       % gute Variante (ohne Fußzeile, Name, Jahr, Seite)
+So funktioniert das dritte Zitat leider nicht \autocite{aristotle:physics}\par      % gute Variante (ohne Fußzeile, Name, Jahr)
+Test \citeyear{aristotle:physics} by \citeauthor{aristotle:physics}                 % Nutzung einzelner Attribute (Jahr, Autor)
 
-% acs gibt lediglich die Kurzform, acl die Langform wieder
+% Test von Abkürzungen - Abkürzung muss im Abkürzungsverzeichnis vorh. sein
 Das K\"urzel EU \ac{EU} wird in erster Verwendung auch in der Langform dargestellt.
 Wird das gleiche K\"urzel erneut aufgerufen (\ac{EU}) so erfolgt lediglich die Kurzform.
 
-% Abbildungsbereschreibung für das Abbildungsverzeichnis
+% Test der Abbildungsbereschreibung - Abbildungsverzeichnis wird automatisch erstellt
 \begin{figure}
     \centering
     \captionof{figure}{Eine Beispielabbildung}    % \caption[Beispielabbildung]{Eine Beispielabbildung}
 \end{figure}
 
+% Test der Tabellenbeschreibung - Tabellenverzeichnis wird automatisch erstellt
 \newpage
 \begin{table}
     \centering
