@@ -50,19 +50,21 @@ Bieber\index{Bieber}                                                            
 
 
 \section{Abk\"urzungen}                                                             
-Das K\"urzel EU \ac{EU} wird in erster Verwendung auch in der Langform
+Das Begrifflichkeit \ac{EU} wird in erster Verwendung auch in der Langform
 dargestellt. Wird das gleiche K\"urzel (\ac{EU}) erneut aufgerufen,
 so erfolgt lediglich die Kurzform.                                                  % Abk\"urzungen durch \ac{Bez}
 
+\newpage
+
 \section{Abbildungen}
-\begin{figure}
+\begin{figure}[h!]                                                                  % Option [h!] platziert das Bild fix
     \centering                                                                      % zentrieren der Abbildung
     \includegraphics[width=.9\linewidth]{ba_abbildungen/testimage}                  % .ps, width=10cm, scale=0.5, width=.5\linewidth
     \captionof{figure}{Eine Beispielabbildung}                                      % \Beschriftung der Abbildung
 \end{figure}
 
 \section{Tabellen}
-\begin{table}
+\begin{table}[h!]                                                                   % Option [h!] platziert die Tabelle fix
     \centering                                                                      % zentrieren der Tabelle
     \begin{tabular}{l|c|r}\hline\hline                                              % Definition der Tabelle (spalten, links-, zentriert- oder rechts-bündig)
         links & zentriert & rechts \\\hline A & B & B\\\cline{2-2}                  % Verbinden von Zeilen

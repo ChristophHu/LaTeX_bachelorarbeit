@@ -1,45 +1,45 @@
-% Bachelorarbeit ---------------------------------------------------------------
+% Bachelorarbeit ------------------------------------------------------------------
 %   Diese Datei gliedert die Bachelorarbeit und setzt Grundlagen
-% ------------------------------------------------------------------------------
+% ---------------------------------------------------------------------------------
 \documentclass[
-    11pt,                               % Schriftgröße
-    a4paper,                            % Papierformat DIN
-    titlepage,                          % es wird eine Titelseite verwendet
-    parskip=half,                       % Abstand zwischen Absätzen (halbe Zeile) oder full (ganze Zeile)
-    headings=normal,                    % Größe der Überschriften verkleinern
-    leqno,                              % Formeln werden mittig dargestellt und erhalten Nummer
-    twoside,                            % Zweiseitig (Buch)
-    toc=flat,                           % Flache TOC
-    %acronym=totoc                       % Abkürzungsverzeichnis         im Inhaltsverzeichnis aufführen
-    listof=totoc,                       % Verzeichnisse                 im Inhaltsverzeichnis aufführen
-    %bibliography=totoc,                 % Literaturverzeichnis          im Inhaltsverzeichnis aufführen
-    %index=totoc,                        % Index                         im Inhaltsverzeichnis aufführen
-    listof=leveldown,                   % Gleitumgebungsverzeichnisse   eine Ebene tiefer
-    %bibliography=leveldown,             % Literaturverzeichnis          eine Ebene tiefer
-    %index=leveldown,                    % Index                         eine Ebene tiefer
-    captions=tableheading,              % Beschriftung von Tabellen unterhalb ausgeben 
-    final                               % Status des Dokuments (final/draft)
+    11pt,                                                                           % Schriftgröße
+    a4paper,                                                                        % Papierformat DIN
+    titlepage,                                                                      % es wird eine Titelseite verwendet
+    parskip=half,                                                                   % Abstand zwischen Absätzen (halbe Zeile) oder full (ganze Zeile)
+    headings=normal,                                                                % Größe der Überschriften verkleinern
+    leqno,                                                                          % Formeln werden mittig dargestellt und erhalten Nummer
+    twoside,                                                                        % Zweiseitig (Buch)
+    toc=flat,                                                                       % Flache TOC
+    %acronym=totoc                                                                   % Abkürzungsverzeichnis         im Inhaltsverzeichnis aufführen
+    listof=totoc,                                                                   % Verzeichnisse                 im Inhaltsverzeichnis aufführen
+    %bibliography=totoc,                                                             % Literaturverzeichnis          im Inhaltsverzeichnis aufführen
+    %index=totoc,                                                                    % Index                         im Inhaltsverzeichnis aufführen
+    listof=leveldown,                                                               % Gleitumgebungsverzeichnisse   eine Ebene tiefer
+    %bibliography=leveldown,                                                         % Literaturverzeichnis          eine Ebene tiefer
+    %index=leveldown,                                                                % Index                         eine Ebene tiefer
+    captions=tableheading,                                                          % Beschriftung von Tabellen unterhalb ausgeben 
+    final                                                                           % Status des Dokuments (final/draft)
 ]{scrreprt}
 
-\include{meta}                          % Metadaten für die folgenden Dokumentteile
-\include{packages}                      % Packages die benötigt werden
-\include{befehle}                       % Befehle
-\include{seitenstil}                    % Seitenstil für die folgenden Dokumentteile
-\include{bachelorarbeit_lit.tex}        % Erstellen aller Zitierungen *.bib
-\makeindex                              % Index
+\include{meta}                                                                      % Metadaten für die folgenden Dokumentteile
+\include{packages}                                                                  % Packages die benötigt werden
+\include{befehle}                                                                   % Befehle
+\include{seitenstil}                                                                % Seitenstil für die folgenden Dokumentteile
+\include{bachelorarbeit_lit.tex}                                                    % Erstellen aller Zitierungen *.bib
+\makeindex                                                                          % Index
 
 \begin{document}
-    \pagenumbering{Roman}                               % I (Deckblatt), II (Eidesstattliche Erklärung), III (Danksagung), IV (Abbildungsverzeichnis), ...
-    \include{ba_deckblatt/ba_deckblatt}                 % Deckblatt der Bachelorarbeit aufnehmen
-    \include{ba_danksagung/ba_danksagung}               % Danksagung der Bachelorarbeit aufnehmen
-    \include{ba_inhaltsverzeichnis}                     % Index
-    \include{ba_abkuerzungsverzeichnis}                 % Abkürzungsverzeichnis
-    \include{ba_abbildungsverzeichnis}                  % Abbildungsverzeichnis
-    \include{ba_tabellenverzeichnis}                    % Tabellenverzeichnis
-    \pagenumbering{arabic}                              % 1, 2, 3, 4,...
-    \include{ba_inhalt/ba_inhalt}                       % Teilung in Einleitung, Hauptteil und Schluss/Fazit
-    \include{ba_anhang/ba_anhang}
-    \include{ba_literaturverzeichnis/ba_literaturverzeichnis}   % Literaturverzeichnis
-    \include{ba_index}                                  % Index
-    \include{ba_eidesstattliche/ba_eidesstattliche}     % Eidesstattliche Erklärung der Bachelorarbeit aufnehmen
+    \pagenumbering{Roman}                                                           % I (Deckblatt), II (Eidesstattliche Erklärung), III (Danksagung), IV (Abbildungsverzeichnis), ...
+    \include{ba_deckblatt/ba_deckblatt}                                             % Deckblatt der Bachelorarbeit aufnehmen
+    \include{ba_danksagung/ba_danksagung}                                           % Danksagung der Bachelorarbeit aufnehmen
+    \include{ba_inhaltsverzeichnis}                                                 % Index
+    \include{ba_abkuerzungsverzeichnis}                                             % Abkürzungsverzeichnis
+    \include{ba_abbildungsverzeichnis}                                              % Abbildungsverzeichnis
+    \include{ba_tabellenverzeichnis}                                                % Tabellenverzeichnis
+    \pagenumbering{arabic}                                                          % 1, 2, 3, 4,...
+    \include{ba_inhalt/ba_inhalt}                                                   % Teilung in Einleitung, Hauptteil und Schluss/Fazit
+    \include{ba_anhang/ba_anhang}                                                   % Anhang
+    \include{ba_literaturverzeichnis/ba_literaturverzeichnis}                       % Literaturverzeichnis
+    \include{ba_index}                                                              % Index
+    \include{ba_eidesstattliche/ba_eidesstattliche}                                 % Eidesstattliche Erklärung der Bachelorarbeit aufnehmen
 \end{document}
