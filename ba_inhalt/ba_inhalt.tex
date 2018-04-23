@@ -1,42 +1,74 @@
 \markboth{Erstes Kapitel}{Erstes Kapitel}
-\chapter{Erstes Kapitel}                % 1.    Erstes Kapitel
-\section{Erstes}                        % 1.1.  Erstes Unterkapitel
-\subsection{Zweites Unterkapitel}       % 1.1.1 Zweites Unterkapitel
+\chapter{Kapitel mit Testelementen - LaTeX}                                         % 1     Kapitel mit Testelementen - LaTeX
+\section{Zitierungen}                                                               % 1.1   Zitierungen
+Das Zitieren im Harvard-Stil ist vor allem bei Sozial- und
+Naturwissenschaftlern beliebt. Ein Hauptunterschied zu anderen Zitierweisen
+ist dabei der Verzicht auf Fu\ss noten. Hei\ss t, dass du mitunter mehr Platz
+pro Seite für deinen Flie\ss text hast - ob das nun ein Fluch oder Segen ist,
+\"uberlassen wir deiner Vorliebe. Der Verzicht auf Fu\ss noten im
+Harvard-Zitieren zieht nat\"urlich eines nach sich: Den Literaturhinweis
+musst du in deinen Text einflie\ss en lassen. Doch auch da zieht die
+amerikanische Elite-Universit\"at die Sparsamkeit der Vollst\"andigkeit vor.
+An geeigneter Stelle verweist du n\"amlich nur auf den Nachnamen der Autorin
+oder des Autors, das Erscheinungsjahr und die Seite, von der du zitierst.\par
 
-% Test des Index - Einträge erhalten einen Eintrag im Index
+EIn Zitat kann dabei durch eine hochgestellte Fu\ss note
+\footfullcite{aristotle:physics} oder durch einen Literaturhinweis im Sinne der
+Harvard-Zitierweise.                                                                % footfullcite (ausführlich) oder \footcite (kurz)
+
+\subsection{Direktes Zitat}                                                         % 1.1.1 Direktes Zitat
+Die Funktion der Ehe ist als
+"Grundstein der Familie und als Zentrum der geistig-seelischen Entwicklung des
+Menschen und andererseits als \"okonomisch-politischer Nutzfaktor"
+\autocite{aristotle:physics} zu betrachten.                                         % Variante (ohne Fu\ss zeile, Name, Jahr)
+
+\subsection{Indirektes Zitat}
+Die Architextualit\"at besch\"aftigt sich damit, wie die Zuordnung eines Textes
+zu einer Kategorie stattfindet und einer Gattung zugeordnet wird
+\autocite[9]{aristotle:physics}.                                                    % Variante (ohne Fu\ss zeile, Name, Jahr, Seite)
+
+\subsection{Auslassungen}
+Die Funktion der Ehe ist als "Grundstein der Familie und als Zentrum der
+geistig-seelischen Entwicklung des Menschen [...]"
+\autocite[9]{aristotle:physics} zu betrachten.                                      % Variante (ohne Fu\ss zeile, Name, Jahr, Seite)
+
+\subsection{Ver\"anderungen}
+Die Funktionen von Ehen sind die "Grundstein[e] der Familie und als Zentrum
+der geistig-seelischen Entwicklung des Menschen und andererseits als
+\"okonomisch-politischer Nutzfaktor" \autocite[9]{aristotle:physics} zu betrachten. % Variante (ohne Fu\ss zeile, Name, Jahr, Seite)
+
+\subsection{Falschschreibungen}
+Befinden sich Tipp-, Grammatik- oder \"ahnliche Fehler im Original,
+\"ubernimmst du diese zwar, kennzeichnest dies jedoch durch ein [sic!]
+hinter dem jeweils fehlerhaften Wort. Aus Gr\"unden der Lesbarkeit
+wird auf ein [sic!] verzichtet, wenn Textstellen zitiert werden,
+die noch in alter Rechtschreibung geschrieben sind.                                 % Fehler im Orginal
+
+\section{Indexeintr\"age}
 Affe\index{Affe}
-Bieber\index{Bieber}
+Bieber\index{Bieber}                                                                % Indexverweis durch \index{Bez}
 
-% Test zu Zitaten - Eintrag muss im Literaturverzeichnis vorhanden sein
-Das erste Zitat\footfullcite{aristotle:physics}\par                                 % gute Variante (Fußzeile, umfänglich)
-So funktioniert auch das zweite Zitat\footcite{aristotle:physics}\par               % gute Variante (Fußzeile, kurz/knapp)
-So funktioniert auch das zweite 2. Zitat \cite{aristotle:physics}\par               % keine gute Variante
-So funktioniert auch das zweite 3. Zitat \autocite[80]{aristotle:physics}\par       % gute Variante (ohne Fußzeile, Name, Jahr, Seite)
-So funktioniert das dritte Zitat leider nicht \autocite{aristotle:physics}\par      % gute Variante (ohne Fußzeile, Name, Jahr)
-Test \citeyear{aristotle:physics} by \citeauthor{aristotle:physics}                 % Nutzung einzelner Attribute (Jahr, Autor)
 
-% Test von Abkürzungen - Abkürzung muss im Abkürzungsverzeichnis vorh. sein
-Das K\"urzel EU \ac{EU} wird in erster Verwendung auch in der Langform dargestellt.
-Wird das gleiche K\"urzel erneut aufgerufen (\ac{EU}) so erfolgt lediglich die Kurzform.
+\section{Abk\"urzungen}                                                             
+Das K\"urzel EU \ac{EU} wird in erster Verwendung auch in der Langform
+dargestellt. Wird das gleiche K\"urzel (\ac{EU}) erneut aufgerufen,
+so erfolgt lediglich die Kurzform.                                                  % Abk\"urzungen durch \ac{Bez}
 
-% Test der Abbildungsbereschreibung - Abbildungsverzeichnis wird automatisch erstellt
+\section{Abbildungen}
 \begin{figure}
-    \centering
-    \includegraphics[width=.9\linewidth]{ba_abbildungen/testimage}                      % .ps, width=10cm, scale=0.5, width=.5\linewidth
-    \captionof{figure}{Eine Beispielabbildung}    % \caption[Beispielabbildung]{Eine Beispielabbildung}
+    \centering                                                                      % zentrieren der Abbildung
+    \includegraphics[width=.9\linewidth]{ba_abbildungen/testimage}                  % .ps, width=10cm, scale=0.5, width=.5\linewidth
+    \captionof{figure}{Eine Beispielabbildung}                                      % \Beschriftung der Abbildung
 \end{figure}
 
-% Test der Tabellenbeschreibung - Tabellenverzeichnis wird automatisch erstellt
-\newpage
+\section{Tabellen}
 \begin{table}
-    \centering
-    \captionof{table}{Tabellenbeschreibung}
-\end{table}
-
-\subsection{Weiteres Unterkapitel}       % 1.1.2
-\section{Zweites}
-\newpage
-\chapter{Zweites Kapitel}
-\section{Erstes vom Zweiten}
+    \centering                                                                      % zentrieren der Tabelle
+    \begin{tabular}{l|c|r}\hline\hline                                              % Definition der Tabelle (spalten, links-, zentriert- oder rechts-bündig)
+        links & zentriert & rechts \\\hline A & B & B\\\cline{2-2}                  % Verbinden von Zeilen
+        1 & 2 & 3\\\hline
+    \end{tabular}
+    \captionof{table}{Tabellenbeschreibung}                                         % Beschriftung der Tabelle
+\end{table} 
 
 \newpage
