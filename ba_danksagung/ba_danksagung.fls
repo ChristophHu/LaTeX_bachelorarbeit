@@ -1,6 +1,0 @@
-PWD /Users/chris/Desktop/Fortbildung und Entwicklung/LaTeX/bachelor_arbeit_vordruck_v.0.1/ba_danksagung
-INPUT /usr/local/texlive/2017/texmf.cnf
-INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/chris/Desktop/Fortbildung und Entwicklung/LaTeX/bachelor_arbeit_vordruck_v.0.1/ba_danksagung/ba_danksagung.tex
-OUTPUT ba_danksagung.log
