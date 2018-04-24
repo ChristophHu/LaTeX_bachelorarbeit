@@ -1,63 +1,65 @@
-% packages ---------------------------------------------------------------------
+% packages ------------------------------------------------------------------------
 % Die Datei packages.tex beinhaltet alle benötigten packages alsauch diese,
 % welche später verfügbar sein sollten.
-% ------------------------------------------------------------------------------
+% ---------------------------------------------------------------------------------
 
-% Seitenstil -------------------------------------------------------------------
+% Seitenstil ----------------------------------------------------------------------
 \usepackage[
-    automark,                           % Kapitelangaben in Kopfzeile automatisch erstellen
-    headsepline,                        % Trennlinie unter Kopfzeile
-    ilines                              % Trennlinie linksbündig ausrichten
+    automark,                                                                       % Kapitelangaben in Kopfzeile automatisch erstellen
+    headsepline,                                                                    % Trennlinie unter Kopfzeile
+    ilines                                                                          % Trennlinie linksbündig ausrichten
 ]{scrpage2}
 
-\usepackage{moreverb}                   % ...
-\usepackage{ae}                         % Schönere Schriften zur PDF-Erstellung
+\usepackage{moreverb}                                                               % ...
+\usepackage{ae}                                                                     % Schönere Schriften zur PDF-Erstellung
 
-% Schrift ----------------------------------------------------------------------
-\usepackage{lmodern}                    % Schriftart Latin modern
-\usepackage{relsize}                    % Schriftgröße relativ festlegen
+% Schrift -------------------------------------------------------------------------
+\usepackage{lmodern}                                                                % Schriftart Latin modern
+\usepackage{relsize}                                                                % Schriftgröße relativ festlegen
+\usepackage{helvet}                                                                 % Schriftart Helvetia
+\renewcommand{\familydefault}{\sfdefault}
 
-% Umlaute ----------------------------------------------------------------------
-\usepackage[T1]{fontenc}                % zur korrekten Darstellung von öüä
-\usepackage[latin1]{inputenc}           % latin1, UTF-8 Zeichenkodierung
-\usepackage[ngerman]{babel}             % Neue Rechtschreibung (german - alte Rechtschreibung)
-%\usepackage{textcomp}
+% Umlaute -------------------------------------------------------------------------
+\usepackage[T1]{fontenc}                                                            % zur korrekten Darstellung von öüä
+\usepackage[latin1]{inputenc}                                                       % latin1, UTF-8 Zeichenkodierung
+\usepackage[ngerman]{babel}                                                         % Neue Rechtschreibung (german - alte Rechtschreibung)
+\usepackage{textcomp}
 
-% Zeichensätze -----------------------------------------------------------------
-\usepackage{textcomp}                   % \textcopyright, \texttrademark
-\usepackage[official,right]{eurosym}    % EUR-Symbol; \euro oder \EUR{XX,XX}
+% Zeichensätze --------------------------------------------------------------------
+\usepackage{textcomp}                                                               % \textcopyright, \texttrademark
+\usepackage[official,right]{eurosym}                                                % EUR-Symbol; \euro oder \EUR{XX,XX}
 
-% Grafiken ---------------------------------------------------------------------
-%\usepackage[dvips,final]{graphicx}      % Einbinden von JPG-Grafiken ermöglichen
+% Grafiken ------------------------------------------------------------------------
+%\usepackage[dvips,final]{graphicx}                                                  % Einbinden von JPG-Grafiken ermöglichen
 \usepackage{graphicx}
-%\graphicspath{ba_logo/}                 % hier liegen die Bilder des Dokuments
-\usepackage{floatflt}                   % umfließen von Bilderna
+%\graphicspath{ba_logo/}                                                             % hier liegen die Bilder des Dokuments
+\usepackage{floatflt}                                                               % umfließen von Bilderna
 
-% Index-Ausgabe mit \printindex ------------------------------------------------
+% Index-Ausgabe mit \printindex ---------------------------------------------------
 \usepackage{makeidx}
 
-% Zeilenabstände und Seitenränder etc. -----------------------------------------
-\usepackage{setspace}                   % Definition von Zeichen-/Zeilenabständen
-\usepackage{geometry}                   % Definition von Seitenrändern
+% Zeilenabstände und Seitenränder etc. --------------------------------------------
+\usepackage{setspace}                                                               % Definition von Zeichen-/Zeilenabständen
+\usepackage{geometry}                                                               % Definition von Seitenrändern
 
-% Index & Hyperlinks -----------------------------------------------------------
+% Index & Hyperlinks --------------------------------------------------------------
 \usepackage{makeidx}
 \usepackage[colorlinks=false]{hyperref}
-\usepackage{url}                        % URL verlinken
+\usepackage{url}                                                                    % URL verlinken
 
-% Glossar - https://en.wikibooks.org/wiki/LaTeX/Glossary -----------------------
-\usepackage{glossaries}                 % zur Erstellung eines Glossars
+% Glossar - https://en.wikibooks.org/wiki/LaTeX/Glossary --------------------------
+\usepackage{glossaries}                                                             % zur Erstellung eines Glossars
 
-% Zitierweise ------------------------------------------------------------------
-%\usepackage[numbers]{natbib}            % Zitierweise, ohne options wird ein Fehler bei fehlendem Jahr im Literaturverzeichnis angezeigt
-%\usepackage{filecontents}               % dient der Erstellung des Literaturverzeichnis durch ba_literaturverzeichnis.tex
+% Zitierweise ---------------------------------------------------------------------
+%\usepackage[numbers]{natbib}                                                       % Zitierweise, ohne options wird ein Fehler bei fehlendem Jahr im Literaturverzeichnis angezeigt
+%\usepackage{filecontents}                                                          % dient der Erstellung des Literaturverzeichnis durch ba_literaturverzeichnis.tex
 \usepackage[backend=biber,style=authoryear]{biblatex}
 \bibliography{bachelorarbeit_lit.bib} 
 \usepackage[babel,german=quotes,threshold=3]{csquotes}
 
-% Abbildungsverzeichnis --------------------------------------------------------
+% Abbildungsverzeichnis -----------------------------------------------------------
 \usepackage{acronym}
 
-% abgelegte packages -----------------------------------------------------------
-%\usepackage{typearea}           % Fehler zur Präambel-Head-Zeile umgehen
+% abgelegte packages --------------------------------------------------------------
+%\usepackage{typearea}                                                              % Fehler zur Präambel-Head-Zeile umgehen
 \usepackage{bookmark}
